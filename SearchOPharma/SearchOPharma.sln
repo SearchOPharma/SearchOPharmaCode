@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchOPharmaApp", "SearchOPharmaApp\SearchOPharmaApp.csproj", "{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D6CB1100-C750-4339-891E-7F841401458C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{94DC43C9-23B2-450D-B479-AE5D121E13D6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\WebApi-WAWS-dev.json = PublishScripts\Configurations\WebApi-WAWS-dev.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +46,19 @@ Global
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.ActiveCfg = Release|x86
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.Build.0 = Release|x86
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.Deploy.0 = Release|x86
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|ARM.ActiveCfg = Release|Any CPU
+		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94DC43C9-23B2-450D-B479-AE5D121E13D6} = {D6CB1100-C750-4339-891E-7F841401458C}
 	EndGlobalSection
 EndGlobal
