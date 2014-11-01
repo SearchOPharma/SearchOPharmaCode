@@ -20,6 +20,7 @@ namespace WebApi.Models
         }
 
         public System.Data.Entity.DbSet<WebApi.Models.Medicine> Medicines { get; set; }
-    
+        public System.Data.Entity.DbSet<WebApi.Models.MedicineSearch> MedicineSearch { get; set; }
+        public System.Data.Entity.DbSet<WebApi.Models.Notification> Notification { get; set; }
     }
 }

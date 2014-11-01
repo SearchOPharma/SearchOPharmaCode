@@ -16,15 +16,14 @@ namespace WebApi.Models
     public  class MedicineSearch
     {
        
-    
         public int MSID { get; set; }
         public string DeviceId { get; set; }
         public int MedicineID { get; set; }
         public int Count { get; set; }
         public int IsActive { get; set; }
     
-        public  ICollection<Notification> Notifications { get; set; }
+        //public  ICollection<Notification> Notifications { get; set; }
        
-        public Pharmacy Pharmacy { get; set; }
+        //public Pharmacy Pharmacy { get; set; }
     }
 }

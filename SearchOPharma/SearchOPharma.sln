@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchOPharmaApp", "SearchOPharmaApp\SearchOPharmaApp.csproj", "{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D6CB1100-C750-4339-891E-7F841401458C}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,8 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishSc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{94DC43C9-23B2-450D-B479-AE5D121E13D6}"
 	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SearchOPharmaWebApp-WAWS-dev.json = PublishScripts\Configurations\SearchOPharmaWebApp-WAWS-dev.json
 		PublishScripts\Configurations\WebApi-WAWS-dev.json = PublishScripts\Configurations\WebApi-WAWS-dev.json
 	EndProjectSection
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SearchOPharma", "SearchOPharma\SearchOPharma.ccproj", "{0ADE2098-78D8-4762-9BF3-5EC0FD596129}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SearchOPharmaService", "SearchOPharmaService\SearchOPharmaService.ccproj", "{D6621379-D47D-41AA-AFCF-54D8BEA567EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchOPharmaWebService", "SearchOPharmaWebService\SearchOPharmaWebService.csproj", "{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,14 +51,30 @@ Global
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.ActiveCfg = Release|x86
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.Build.0 = Release|x86
 		{AE670ED0-FC66-4A0A-BD46-BB79BE30813F}.Release|x86.Deploy.0 = Release|x86
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|ARM.ActiveCfg = Release|Any CPU
-		{40F63ACF-8B2B-4A2A-8655-5854A89F91C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0ADE2098-78D8-4762-9BF3-5EC0FD596129}.Release|x86.ActiveCfg = Release|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D6621379-D47D-41AA-AFCF-54D8BEA567EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Release|ARM.ActiveCfg = Release|Any CPU
+		{79985E1C-9E4C-441C-8F39-2C673CD7F7BE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

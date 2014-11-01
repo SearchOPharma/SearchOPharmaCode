@@ -45,12 +45,12 @@ namespace SearchOPharmaApp
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-#if DEBUG
+            #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
-#endif
+            #endif
 
             Frame rootFrame = Window.Current.Content as Frame;
 

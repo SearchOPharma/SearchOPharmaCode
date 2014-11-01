@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="SearchOPharmaService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="SearchOPharmaWebService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=hackit;AccountKey=+jRWnBDzTy4fWuC915gq1T98CzcvFqUxpPglbgcs17ER3qclC7cNCz+Mzq+zAnchG0VZwvbPCrDpY1dopgOuKg==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
